@@ -1,1 +1,49 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- use the source, luke! -->
+
+<head>
+    <title>Code and Startups</title>
+
+    <!-- LES METAAAAAAA -->
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js?${buildtime}"></script>
+    <script type="text/javascript" src="js/ICanHaz.min.js"></script>
+    <script type="text/javascript" src="js/shell.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+
+    <script id="prompt_line" type="text/html">
+      <div>
+        <span class="before_prompt">/&gt;&nbsp;</span><input class="prompt" type="text" value="{{command}}" disabled=""/>
+      </div>
+    </script>
+
+    <script id="text_list_line" type="text/html">
+      <div class="html_block">
+        <p class="line">
+            {{#texts}}
+            [&nbsp;{{.}}&nbsp;]&nbsp;
+            {{/texts}}
+        </p>
+      </div>
+    </script>
+
+    <script id="html_block" type="text/html">
+        {{{html_block}}}
+    </script>
+
+</head>
+<body>
+<a href="https://github.com/daviddumon/personal_website">
+    <img id="github" src="images/github.png" alt="Fork me on GitHub"/>
+</a>
+<div id="shell"></div>
+<div id="active_prompt">
+    <span class="before_prompt">/&gt;&nbsp;</span><input id="prompt_input" class="prompt" type="text" autofocus="autofocus"/>
+</div>
+</body>
+</html>

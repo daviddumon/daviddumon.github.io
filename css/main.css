@@ -1,0 +1,62 @@
+body {
+    color: #FFFFFF;
+    background-color: #00355B;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-family: "Menlo";
+    color: #3EABFF;
+    font-size: 14px;
+}
+
+.prompt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4DFF00;
+    position: relative;
+    background-color: #00355B;
+    border: none;
+    width: 80%;
+    outline: none;
+    font-family: "Menlo";
+    padding: 0px;
+}
+
+pre {
+    line-height: 150%;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+#github {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+a {
+    cursor: pointer;
+    color: #3EABFF;
+}
+
+.before_prompt {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4DFF00;
+}
+
+.html_block {
+    padding-left: 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#shell {
+    padding-top: 1em;
+}
+
+div {
+    clear: both;
+}
